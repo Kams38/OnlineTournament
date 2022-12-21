@@ -198,9 +198,9 @@ section#shop-gallery {
     color:rgb(255, 255, 255);
     opacity: 0;
 }
-.item img:hover + h3 {
+/*.item img:hover + h3 {
     opacity: 1;
-}
+}*/
 /*****************/
 /****Tournoit*****/
 /*****************/
