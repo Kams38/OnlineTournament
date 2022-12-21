@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: Kanit, Arial, sans-serif;
+}
+
+body > video {
+    z-index: -1;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    background-color: transparent;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header a:hover{
+    color: #BD2A2E;
+    border-bottom: 2px solid #BD2A2E;
+    transition: all 0.5s;
+}
+
+header a{
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    margin: 0 15px;
+    font-size: 1.3em;
+}
+
+header button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+/*******************/
+/*  PAGE DACCUEIL  */
+/*******************/
+
+#backgrounvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+main#presentation {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+main#presentation h1 {
+    font-size: 10em;
+    color: white;
+    -webkit-text-stroke: 2px black;
+    margin: 0;
+}
+
+main#presentation p {
+    color: white;
+    margin: 0;
+}
+
+main#presentation #O,#T{
+    color: #BD2A2E;
+}
+
+/* Bouton index html*/
+main#presentation button {
+    height: 50px;
+    width: 200px;
+    margin-top: 10%;
+    border: 2px solid black;
+    border: none;
+    outline: none;
+}
+
+main#presentation button:hover {
+    color: white;
+    background-color: #BD2A2E;
+    transition: all 1s;
+}
+
+/*******************/
+/*  COMPTE JOUEUR  */
+/*******************/
+main.container {
+    width: 80%;
+    margin: auto;
+    padding: 1em;
+}
+
+#user-info {
+    display: flex;
+    background: #B2BEBF;
+    border: 5px solid red;
+    margin-top: 50px;
+}
+
+#user-info div img{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+
+#user-info ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+#user-info ul li {
+    margin-right: 50px;
+    margin: 0px 20px 10px 0px;
+}
+
+#user-info p{
+    background-color: #889C9B;
+    border: 1px solid black;
+}
+
+#user-info div:nth-child(2) {
+    padding: 20px;
+}
+
+#match-history{
+    background-color: #B2BEBF;
+    display: flex; 
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+}
+
+#match-history ul{
+    padding: 0px;
+    list-style-type: none;
+    border: 2px solid rgb(0, 255, 255);
+}
+
+#match-history ul li{
+    background-color: #889C9B;
+    border: 1px solid #889C9B;
+    border-left: 5px solid green;
+    background: linear-gradient(90deg, green, 25px, #889C9B);
+    margin: 15px;
+    padding: 25px;
+}
+
+#match-history ul li:nth-child(4){
+    border-left: 5px solid red;
+    background: linear-gradient(90deg, red, 25px, #889C9B);
+}
+
+/*******************/
+/*    SHOP         */
+/*******************/
+section#shop-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed;
+}
+.item {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid transparent;
+    width: 33%;
+    height: 25em;
+    margin-top: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.item img {
+    width: 15em;
+    margin-top: 10px;
+}
+
+.item h3{
+    color:rgb(255, 255, 255);
+    opacity: 0;
+}
+.item img:hover + h3 {
+    opacity: 1;
+}
+/*****************/
+/****Tournoit*****/
+/*****************/
+
+main#presentation-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: transparent;
+}
+main#presentation-2 h1 {
+    margin: 0;
+}
+main#presentation-2 button {
+    width: 200px;
+}
+
+.box-tour{
+    position: fixed;
+    display: flex;
+    background-color: transparent;
+    border: 3px solid transparent;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.box{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 5px solid transparent;
+    box-sizing: border-box;
+    padding: 15px;
+    width: 40%;
+    height: 30%;
+    flex-direction: row;
+    margin-top: 55px;
+    box-shadow: #666;
+}
+
+.box-tour .box img{
+    display: flex;
+    width: 50%;
+    height: 200px;
+    margin-top: 15px;
+}
+
+.box-tour .box h1{
+    font-size: larger;
+}
+
+.ligne{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    width: 50%;
+}
+
+.box .look{
+    display: flex;
+    background-color: rgb(242, 247, 242);
+    width: 80px;
+    height: 25px;
+    margin-top: 13px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box .look:hover{
+    background-color: #BD2A2E;
+    border-bottom: 2px solid #BD2A2E;
+    transition: all 0.5s;
+}
+
+
+/*****************/
+/****Test Fed*****/
+/*****************/
